@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juice Shop</title>
+        <link rel="stylesheet" href="design.css">
+</head>
+<script src="juice.js"></script>
+
+<body>
+        <h1 style="text-align: center;">Welcome to Juice Shop!!!</h1>
+        <div class="items" id="juiceList">
+                <h3 style="text-align: center;"><span>Apple Juice - $5.00</span><button style="margin-left: 50px;"
+                                onclick="addApple();"><span>Add To Cart</span></button></h3>
+                <h3 style="text-align: center;"><span>Orange Juice- $6.00</span><button style="margin-left: 37px;"
+                                onclick="addOrange()"><span>Add To Cart</span></button></h3>
+                <h3 style="text-align: center;"><span>Carrot Juice- $7.00</span><button style="margin-left: 43px;"
+                                onclick="addCarrot()"><span>Add To Cart</span></button></h3>
+                <h3 style="text-align: center;"><span>Fig Smoothie- $8.00</span><button style="margin-left: 40px;"
+                                onclick="addFig()"><span>Add To Cart</span></button></h3>
+                <h3 style="text-align: center;"><span>Mango Juice- $9.00</span><button style="margin-left: 42px;"
+                                onclick="addMango()"><span>Add To Cart</span></button></h3>
+                <h3 id="appleCount" style="text-align: center; display: none;"></h3>
+                <h3 id="orangeCount" style="text-align: center; display: none;"></h3>
+                <h3 id="carrotCount" style="text-align: center; display: none;"></h3>
+                <h3 id="figCount" style="text-align: center; display: none;"></h3>
+                <h3 id="mangoCount" style="text-align: center; display: none;"></h3>
+                <button id="checkout" style="margin-left: 144px; display: none;" onclick="checkOut()">Checkout</button>
+        </div>
+        <div class="CheckOut" id="finalItems" style="display: none;">
+
+                <h1 id="Name" style="text-align: center;"></h1>
+                <h3 id="finalApple"></h3>
+                <h3 id="finalOrange"></h3>
+                <h3 id="finalCarrot"></h3>
+                <h3 id="finalFig"></h3>
+                <h3 id="finalMango"></h3>
+                <h3 id="tax"></h3>
+                <h2 id="total" style="text-align: center;"></h2>
+        </div>
+</body>
+
+</html>
